@@ -1,0 +1,327 @@
+header{
+	width: 6.4rem;
+	height:0.76rem;
+	background:#02a1fc;
+}
+
+/* 设置浮动 */
+.left-float{
+	float:left;
+}
+.right-float{
+	float:right;
+}
+/* 设置分隔线 */
+.line{
+	width:6.4rem;
+	height:0.07rem;
+	background:#e5e5e5;
+}
+/* 设置头部header样式 */
+header{
+	width:6.4rem;
+	height:0.76rem;
+	position:fixed;
+	z-index:2;
+}
+header .nav{
+	width:5.8rem;
+	height:0.41rem;
+	margin:0.175rem auto;
+	
+}
+header .nav div{
+	margin-left:0.1rem;
+}
+/* 设置选择地址的样式 */
+
+header .left-float span{
+	color:#fff;
+	font-size:0.27rem;
+	/* vertical-align:middle; */
+	display:block;
+	position:absolute;
+	left:0.1rem;
+	width:1rem;
+	/* background:#fcc; */
+	text-align:center;
+}
+/* 设置下拉图片样式 */
+header .nav-left img{
+	width: 0.25rem;
+	height:0.25rem;
+	/* border:0.01rem solid #f00; */
+	vertical-align:middle;
+	margin-left:0.6rem;
+	margin-top:0.1rem;
+}
+header #cities{
+	height:2rem;
+	overflow:auto;
+	color:#fff;
+	font-size:0.27rem;
+	background:#02a1fc;
+	position:absolute;
+	top: 0.55rem;
+	left:0.08rem;
+	text-align:center;
+	display:none;
+}
+/* 设置二维码样式 */
+header .nav .nav-right img{
+	width:0.39rem;
+	height:0.39rem;
+	vertical-align:middle;
+	margin-top:0.025rem;
+}
+/* 设置input框样式 */
+header .nav .nav-center input{
+	width:3.9rem;
+	height:0.35rem;
+	border:0.025rem solid #fff;
+	background:url(../img/1-top/search.png) no-repeat;
+	background-size:0.47rem;
+	border-radius:0.1rem;
+	color:#fff;
+	outline:none;
+	font-size:0.23rem;
+	margin-top:0.02rem;
+	text-indent:0.5rem;
+}
+header .nav .nav-center input::-webkit-input-placeholder{
+	color:#fff;
+	text-indent:0.5rem;
+	font-size:0.23rem;
+}
+
+
+/* 设置中间部分样式 */
+article{
+	padding-top:0.76rem;
+	width:auto;
+	height:20.14rem;
+}
+/* art1大轮播图 */
+article .swiper-container{
+	width:auto;
+	height:2.03rem;
+}
+article .swiper-slide img{
+	width:6.4rem; 
+	height:2.03rem;
+}
+
+/* art2图标 */
+article .art2{
+	width:6.4rem;
+	height:3.38rem;
+}
+article .art2 img{
+	width:0.82rem;
+	height:0.82rem;
+	margin-left:0.58rem;
+	margin-top:0.2rem;
+}
+article #hotel{
+	width:1.01rem;
+	height:0.82rem;
+}
+/* 给第一行右侧两个图标绝对定位 */
+article .row1-right{
+	display:inline-block;
+	position:absolute;
+	left:2.95rem;
+}
+/* 字的样式 */
+article .btnTxt1,.btnTxt2{
+	font-size:0.22rem;
+}
+/* 第一行字的定位 */
+article .btnTxt1 span:nth-child(1){
+	margin-left:0.8rem;
+}
+article .btnTxt1 span:nth-child(2){
+	margin-left:0.92rem;
+}
+article .btnTxt1 span:nth-child(3){
+	margin-left:1rem;
+}
+article .btnTxt1 span:nth-child(4){
+	margin-left:0.75rem;
+}
+
+/* 第二行字的定位 */
+article .btnTxt2 span:nth-child(1){
+	margin-left:0.55rem;
+}
+article .btnTxt2 span:nth-child(2){
+	margin-left:0.75rem;
+}
+article .btnTxt2 span:nth-child(3){
+	margin-left:0.75rem;
+}
+article .btnTxt2 span:nth-child(4){
+	margin-left:0.74rem;
+}
+
+/* 设置art中Title的通用样式 */
+.titleBox{
+	width:5.8rem;
+	height:0.79rem;
+	font-size:0.2rem;
+	margin:0 auto;
+	/* background:#ccc; */
+}
+.titleBox img{
+	padding-top:0.2rem;
+}
+.titleBox .title{
+	/* background:#f46; */
+	width:5.6rem;
+	height:0.23rem;
+	margin-left:0.2rem;
+	padding-top:0.2rem;
+	display:flex;
+	justify-content:space-between;
+	/* background:#f46; */
+}
+/* .titleBox .title span{
+	margin-right:0.5rem;
+}
+ */
+
+/* .title span:nth-child(2){
+	font-size:0.16rem;	
+} */
+
+/* art3免费体验区 */
+.art{
+	width:6.4rem;
+	height:4.24rem;
+/* 	background:#fcc;
+ */
+}
+.artPic{
+	width:5.8rem;
+	height:2.92rem;
+	/* background:#46f; */
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+
+}
+.artPic img{
+	width:1.2rem;
+	height:0.9rem;
+}
+
+
+/* art4邦尼创富区 */
+/* 大部分同art3样式 */
+.art4FreePic div div{
+	width:1.42rem;
+	height:1.36rem;
+	background:#fcc;
+
+}
+
+
+/* art5猜你喜欢 */
+.art5{
+/* 	margin:0 auto; */
+	width:6.4rem;
+	height:6.4rem;
+/* 	background:#fcc;
+ */}
+
+.art5FreePic{
+	margin:0 auto;
+	width:5.8rem;
+	height:4.5rem;
+
+	/*background:#eee;*/
+	/* border-bottom:0.01rem solid #000; */
+}
+
+.art5FreePic .leftRow{
+
+	width:5.8rem;
+	height:1.34rem;
+	margin-bottom:0.2rem;
+
+}
+.art5FreePic .leftRow .one img{
+	width:2.0rem;
+	height:1.33rem;
+	float:left;
+}
+.art5FreePic .leftRow .right{
+	margin-left:0.1rem;
+	width:3.7rem;
+	height:1.33rem;
+/* 	background:lightblue;
+ */	float:left;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+}
+.art5FreePic .leftRow .right div{
+	display:flex;
+	justify-content:space-between;
+}
+
+/* 查看全部 */
+#viewtxt{
+	color:#333;
+	font-size:0.2rem;
+	text-align:center;
+	margin-top:0.3rem;
+	padding-bottom: 1rem;
+}
+.hidePic{
+	display:none;
+}
+
+
+.margin{
+	width:6.4rem;
+	height:0.82rem;
+}
+/* footer底部 */
+footer{
+	width:6.4rem;
+	height:0.82rem;
+	background:#0c97f8;
+	display:flex;
+	align-items:center;
+	position:fixed;
+	z-index:2;
+	bottom:0;
+}
+footer .footerBox{
+	/* background:#fcc; */
+	width:5.33rem;
+	height:0.63rem;
+	display:flex;
+	justify-content:space-between;
+	margin:0 auto;
+}
+.footerBox div{
+	text-align:center;
+	width:0.83rem;
+	height:0.63rem;
+}
+.footerBox div i{
+	font-size:0.3rem;
+	color:#fff;
+}
+.footerBox div div{
+	color:#fff;
+	/* margin-top:-0.1rem; */
+}
+
+footer img{
+	width:0.44rem;
+	height:0.41rem;
+}

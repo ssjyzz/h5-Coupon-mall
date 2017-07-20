@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动端团购</title>
+	<!-- pc端 -->
+	<meta name="renderer" content="webkit"  
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--避免IE使用兼容模式>
+	================================== 移动端 ==========================================
+	<meta name="applicable-device" content="mobile" />
+	<!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+	<meta content="telephone=no" name="format-detection"/> 
+	<!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+	<!-- 全屏显示 
+	<meta content="yes" name="apple-touch-fullscreen"/>
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">
+	<!-- 屏蔽百度转码 -->
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<!--引入css-->
+	<link rel="stylesheet" href="css/common.css"> 
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="iconfontDemo/iconfont/iconfont.css">
+	<!--引入js-->
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script src="js/swiper.min.js"></script>
+	
+
+</head>
+<body>
+	<!--头部部分-->
+	<header>
+		<div class="nav">
+			<div class="nav-left left-float">
+				<span id="city" >南京</span>
+				<div id="cities">
+					<ul>
+						<li>南京</li>
+						<li>徐州</li>
+						<li>宿迁</li>
+						<li>连云港</li>
+						<li>淮安</li>
+						<li>盐城</li>
+						<li>扬州</li>
+						<li>泰州</li>
+						<li>南通</li>
+						<li>镇江</li>
+						<li>常州</li>
+						<li>无锡</li>
+						<li>苏州</li>
+					</ul>
+				</div>
+				<img id="selectCity" src="img/1-top/listDown.png" >	
+			</div>
+			<div class="nav-center left-float">
+				<input type="text" placeholder="请输入商品名、品类、或商圈..." size="35" id="navInput">
+			</div>
+			<div class="nav-right right-float">
+				<img src="img/1-top/or-code.png">
+			</div>
+		</div>
+	</header>
+	<!--中间部分-->
+	<article>
+		<div class="swiper-container art1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/1-top/swiper-01.png">
+				</div>
+				<div class="swiper-slide" >
+					<img src="img/1-top/swiper-01.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/1-top/swiper-01.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/1-top/swiper-01.png">
+				</div>
+			</div>
+		</div>
+		<div class="art2">
+			<div class="buttonBox left-float">
+				<div class="row1">
+					<img src="img/3-button/food.png">
+					<img id="hotel" src="img/3-button/hotel.png">
+					<div class="row1-right" >
+						<img src="img/3-button/attractions.png">
+						<img src="img/3-button/play.png">
+					</div>
+				</div>
+				<div class="btnTxt1">
+					<span>美食</span>
+					<span>酒店</span>
+					<span>景点</span>
+					<span>休闲娱乐</span>
+				</div>
+				<div class="row2">
+					<img src="img/3-button/buy.png">
+					<img src="img/3-button/movie.png">
+					<img src="img/3-button/holiday.png">
+					<img src="img/3-button/shopping.png">
+				</div>
+				<div class="btnTxt2">
+					<span>闪惠团购</span>
+					<span>电影</span>
+					<span>度假套餐</span>
+					<span>购物</span>
+				</div>
+			</div>
+		</div>
+		<!-- 分割线 -->
+		<div class="line"></div>
+		<!-- art3免费体验区 -->
+		<div class="art3 art">
+			<div class="titleBox">
+				<img src="img/5-rich/5-0-blueSquare.png" class="left-float">
+				<div class="title">	
+					<span>免费体验区</span>
+					<span id="time"></span>
+					<span>查看更多&gt;</span>
+				</div>
+			</div>
+			<div class="art3FreePic artPic">
+				<div>
+					<img src="img/4-free/ice.png">
+					<div>冰淇淋</div>
+				</div>
+				<div>
+					<img src="img/4-free/drinks.png">
+					<div>果蔬饮料</div>
+				</div>
+				<div>
+					<img src="img/4-free/fruit.png">
+					<div>水果拼盘</div>
+				</div>
+				<div>
+					<img src="img/4-free/pizza.png">
+					<div>美味披萨</div>
+				</div>
+				<div>
+					<img src="img/4-free/rubcar.png">
+					<div>洗车擦车</div>
+				</div>
+				<div>
+					<img src="img/4-free/photography.png">
+					<div>摄影写真</div>
+				</div>
+				<div>
+					<img src="img/4-free/billiards.png">
+					<div>台球休闲</div>
+				</div>
+				<div>
+					<img src="img/4-free/foothealth.png">
+					<div>足浴养生</div>
+				</div>
+			</div>
+		</div>
+		<!-- 分割线 -->
+		<div class="line"></div>
+		<!-- art4邦尼创富区 -->
+		<div class="art4 art">
+			<div class="titleBox">
+				<img src="img/5-rich/5-0-blueSquare.png " class="left-float" >
+				<div class="title">
+					<span>玖邦尼创富</span>
+					<span>邦尼币购物，超值超划算！</span>
+					<span>查看全部&gt;</span>
+				</div>
+			</div>
+			<div class="art4FreePic artPic">
+				<div>
+					<div>
+						<span>养生</span>
+						<span>强身保健</span>
+						<img src="img/5-rich/5-1-health.png">
+					</div>
+					
+				</div>
+				<div>
+					<div>
+						<span>美食</span>
+						<span>舌尖美味</span>
+						<img src="img/5-rich/5-2-food.png">
+					</div>
+					
+					
+				</div>
+				<div>
+					<div>
+						<span>娱乐</span>
+						<span>嗨翻全场</span>
+						<img src="img/5-rich/5-3-recreation.png">
+					</div>
+					
+					
+				</div>
+				<div>
+					<div>
+						<span>丽人</span>
+						<span>华丽蜕变</span>
+						<img src="img/5-rich/5-4-beauty.png">
+					</div>
+					
+				</div>
+				<div>
+					<div>
+						<span>电影</span>
+						<span>身临其境</span>
+						<img src="img/5-rich/5-5-movie.png">
+					</div>
+					
+					
+				</div>
+				<div>
+					<div>
+						<span>写真</span>
+						<span>定格美丽</span>
+						<img src="img/5-rich/5-6-photo.png">
+					</div>
+					
+					
+				</div>
+				<div>
+					<div>
+						<span>住宿</span>
+						<span>身心放松</span>
+						<img src="img/5-rich/5-7-hotel.png">
+
+					</div>
+				</div>
+				<div>
+					<div>
+						<span>培训</span>
+						<span>技能提升</span>
+						<img src="img/5-rich/5-8-train.png">
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- 分割线 -->
+		<div class="line"></div>
+		<!-- art5猜你喜欢 -->
+		<div class="art5 ">
+			<div class="titleBox">
+				<img src="img/5-rich/5-0-blueSquare.png " class="left-float" >
+				<div class="title">
+					<span>猜你喜欢</span>
+					<span>查看所有&gt;</span>
+				</div>
+			</div>
+		<!-- 图片部分 -->
+			<div class="art5FreePic">
+				<!-- 图1和右边文字 -->
+				<div class="leftRow">
+					<div class="left">
+						<div class="one">
+							<img src="img/6-like/like1.png">
+						</div>
+						
+					</div>
+					<div class="right">
+						<div>
+							<span>香贝贝蛋糕/蛋挞</span>
+							<span>&lt;1km</span>
+						</div>
+						<div>
+							<span>【高皇寨花都莲郡小区门向西30米】</span>
+						</div>
+						<div>
+							<span>￥49.00元</span>
+							<span>月销量1532份</span>
+						</div>
+					</div>
+				</div>
+				<!-- 图2和右边文字 -->
+				<div class="leftRow">
+					<div class="left">
+						<div class="one">
+							<img src="img/6-like/like2.png">
+						</div>
+						
+					</div>
+					<div class="right">
+						<div>
+							<span>香贝贝蛋糕/蛋挞</span>
+							<span>&lt;1km</span>
+						</div>
+						<div>
+							<span>【高皇寨花都莲郡小区门向西30米】</span>
+						</div>
+						<div>
+							<span>￥49.00元</span>
+							<span>月销量1532份</span>
+						</div>
+					</div>
+				</div>
+				<!-- 图3和右边文字 -->
+				<div class="leftRow">
+					<div class="left">
+						<div class="one">
+							<img src="img/6-like/like.png">
+						</div>
+						
+					</div>
+					<div class="right">
+						<div>
+							<span>香贝贝蛋糕/蛋挞</span>
+							<span>&lt;1km</span>
+						</div>
+						<div>
+							<span>【高皇寨花都莲郡小区门向西30米】</span>
+						</div>
+						<div>
+							<span>￥49.00元</span>
+							<span>月销量1532份</span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+
+			<!-- 隐藏图片部分 -->
+			<div class="art5FreePic hidePic">
+				<!-- 图1和右边文字 -->
+				<div class="leftRow">
+					<div class="left">
+						<div class="one">
+							<img src="img/6-like/like1.png">
+						</div>
+						
+					</div>
+					<div class="right">
+						<div>
+							<span>香贝贝蛋糕/蛋挞</span>
+							<span>&lt;1km</span>
+						</div>
+						<div>
+							<span>【高皇寨花都莲郡小区门向西30米】</span>
+						</div>
+						<div>
+							<span>￥49.00元</span>
+							<span>月销量1532份</span>
+						</div>
+					</div>
+				</div>
+				<!-- 图2和右边文字 -->
+				<div class="leftRow">
+					<div class="left">
+						<div class="one">
+							<img src="img/6-like/like2.png">
+						</div>
+						
+					</div>
+					<div class="right">
+						<div>
+							<span>香贝贝蛋糕/蛋挞</span>
+							<span>&lt;1km</span>
+						</div>
+						<div>
+							<span>【高皇寨花都莲郡小区门向西30米】</span>
+						</div>
+						<div>
+							<span>￥49.00元</span>
+							<span>月销量1532份</span>
+						</div>
+					</div>
+				</div>
+				<!-- 图3和右边文字 -->
+				<div class="leftRow">
+					<div class="left">
+						<div class="one">
+							<img src="img/6-like/like.png">
+						</div>
+						
+					</div>
+					<div class="right">
+						<div>
+							<span>香贝贝蛋糕/蛋挞</span>
+							<span>&lt;1km</span>
+						</div>
+						<div>
+							<span>【高皇寨花都莲郡小区门向西30米】</span>
+						</div>
+						<div>
+							<span>￥49.00元</span>
+							<span>月销量1532份</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="viewtxt">查看全部团购</div>
+		</div>
+		
+	</article>
+	<!-- 把被固定底部挡住的页面用div隔开 -->
+	<div class="margin"></div>
+	<!--底部部分-->
+	<footer>
+		<div class="footerBox">
+			<div>
+				<!-- <img src="img/5-rich/5-8-train.png"> -->
+				<i class="icon iconfont icon-home"></i>
+				<div>商城首页</div>
+			</div>
+			<div>
+				<i class="icon iconfont icon-hezuo"></i>
+				<div>商家合作</div>
+			</div>
+			<div>
+				<i class="icon iconfont icon-weibiao45127"></i>
+				<div>订单列表</div>
+			</div>
+			<div>
+				<i class="icon iconfont icon-person"></i>
+				<div>会员中心</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/index.js"></script> 
+</body>
+</html>
